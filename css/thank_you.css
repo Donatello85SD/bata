@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    border-image: 0;
+    font-family: "Webfontregular", "Brush", "Southern_cirilicanormal", serif;
+    list-style-type: none;
+}
+@font-face {
+    font-family: "Brush";
+    src: url(../fonts/Brushc.ttf);
+}
+@font-face {
+    font-family: "Webfontregular";
+    src: url(../fonts/Brush_cyrillic/brushc-webfont.woff2) format('woff2'),
+    url(../fonts/Brush_cyrillic/brushc-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Southern_cirilicanormal";
+    src: url(../fonts/Southn_cyrilic/southn-webfont.woff2) format('woff2'),
+    url(../fonts/Southn_cyrilic/southn-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+html, body {
+    height: 100%;
+}
+.container {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: chartreuse;
+}
+.section {
+    width: 70%;
+    height: 80%;
+    padding: 30% 5%;
+    background-color: red;
+    margin: auto;
+}
+p {
+    text-align: center;
+    font-size: 50px;
+    line-height: 60px;
+}
