@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Roštilj Bata</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="icon" type="img/png" href="../img/favicon.png">
+</head>
+
+<body id="top">
+
+
+<header>
+    <div class="header_nav">
+        <a href="../index.html">
+            <div class="logo_black">
+                <h2>Ro{tiq Bata</h2>
+                <img src="../img/logo_black.png" alt="logo">
+            </div>
+        </a>
+        <nav>
+            <input  type="image" src="../img/hamburger_button.png"  onclick="myFunction()" class="dropbtn">
+            <ul id="myDropdown" class="navigation_top">
+                <li><a href="../index.html">Po~etna</a></li>
+                <li><a href="about_us.html">O nama</a></li>
+                <li><a href="offer.html">Ponuda</a></li>
+                <li><a href="gallery.html">Galerija</a></li>
+                <li><a href="#" class="current">Kontakt</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+
+<section id="section1">
+    <div class="section_container">
+        <div class="horizontal_line_icons">
+            <span class="h_line hln_left"></span>
+            <span class="h_l_contact">Kontakt</span>
+            <span class="h_line hln_right"></span>
+        </div>
+        <div class="info">
+            <img class="logo" src="../img/logo_black.png">
+            <h1>Ro{tiq Bata</h1>
+            <div class="h2_icon">
+                <img class="icon" src="../img/footer_adrress.png" alt="photo">
+                <h2>Adresa</h2>
+            </div>
+            <p>Pantalejska 24</p>
+            <p>Jagodin mala</p>
+            <div class="h2_icon">
+                <img class="icon" src="../img/footer_phone.png" alt="photo">
+                <h2>Telefon</h2>
+            </div>
+            <p>062/ 830 61 95</p>
+            <div class="h2_icon">
+                <img class="icon" src="../img/opening_times.png" alt="photo">
+                <h2>Radno vreme</h2>
+            </div>
+            <p>Ponedeqak - Subota</p>
+            <p>08:00 - 22:00</p>
+            <p>Nedeqa</p>
+            <p>08:00 - 16:00</p>
+        </div>
+        <div class="formular">
+            <h1>Kontaktirajte nas</h1>
+            <form  id="form1" action="../email/php_mailer.php" method="post" name="form1">
+                <input class="ime help1" type="text" placeholder="Ime" name="ime">
+                <!--autofocus=""-->
+                <input class="e_mail help1" type="text" placeholder="E-mail" name="e_mail">
+                <input class="heading help1" type="text" placeholder="Naslov poruke" name="heading">
+                <textarea class="textarea help1" placeholder="Vaša poruka..." name="textarea"></textarea>
+                <input class="send" type="submit" value="Pošalji" name="send">
+            </form>
+            <p><?php if(!empty($message)) echo $message;</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section id="section2">
+    <div class="section_container">
+        <div class="map">
+            <div class="map_el">
+                <div id="gmap_canvas">
+                    <a class="google-map-code" href="http://www.map-embed.com"
+                       id="get-map-data">map-embed.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<footer>
+    <div class="footers_container">
+        <div class="footers_div">
+            <h1>Kontakt</h1>
+            <ul class="contact unord_list">
+                <li class="adrress">
+                    <img src="../img/footer_adrress.png" alt="adrress">
+                    <p>Pantalejska 24,</p>
+                    <p class="paragraph1">Jagodin mala</p>
+                </li>
+                <li class="phone">
+                    <img src="../img/footer_phone.png" alt="phone">
+                    <p>062/ 830 61 95</p>
+                </li>
+                <li class="e_mail help5">
+                    <img src="../img/footer_mail.png" alt="E mail">
+                    <p>E mail adresa</p>
+                </li>
+                <li class="follow_us help4">
+                    <a href="https://www.facebook.com/RostiljBataNis/">
+                        <img src="../img/footer_follow_us.png" alt="follow us">
+                        <p>Pratite nas...</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footers_div">
+            <h1>Linkovi</h1>
+            <ul class="links unord_list">
+                <li><img src="../img/footer_burger.png" alt="burger">
+                    <a href="../index.html">Po~etna</a></li>
+                <li><img src="../img/footer_burger.png" alt="burger">
+                    <a href="about_us.html">O nama</a></li>
+                <li><img src="../img/footer_burger.png" alt="burger">
+                    <a href="offer.html">Ponuda</a></li>
+                <li><img src="../img/footer_burger.png" alt="burger">
+                    <a href="gallery.html">Galerija</a></li>
+                <li><img src="../img/footer_burger.png" alt="burger">
+                    <a href="#">Kontakt</a></li>
+            </ul>
+        </div>
+        <div class="footers_div">
+            <h1>Podelite sa drugima</h1>
+            <ul class="share unord_list">
+                <li><a href="#"><img src="../img/social/social_facebook.png"></a></li>
+                <li><a href="#"><img src="../img/social/social_twitter.png"></a></li>
+                <li><a href="#"><img src="../img/social/social_google_plus.png">
+                </a></li>
+                <li><a href="#"><img src="../img/social/social_linkedin.png"></a></li>
+                <li><a href="#"><img src="../img/social/social_pinterest.png"></a></li>
+            </ul>
+        </div>
+        <div class="footers_div help6">
+            <h1>Radno vreme</h1>
+            <ul class="opening_times unord_list">
+                <li><img src="../img/opening_times.png">
+                    <p>Ponedeqak - Subota</p>
+                    <p class="paragraph2">08:00 - 22:00</p>
+                </li>
+                <li><img src="../img/opening_times.png">
+                    <p>Nedeqa</p>
+                    <p class="paragraph2">08:00 - 16:00</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="copyright">
+        <a href="#">Dača</a>
+    </div>
+</footer>
+
+
+
+<a href="#" class="cd-top">Top</a>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<script src="../js/main.js">
+                                <!--Skripta za Scroll to top-->
+</script>
+
+
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript">
+    function init_map() {
+        var myOptions = {
+            zoom: 18, center: new
+                    google.maps.LatLng(43.327672920709645, 21.90469604921259),
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
+        marker = new google.maps.Marker({
+            map: map, position: new google.maps.LatLng(43.327672920709645, 21.90476904925000)
+        });
+        infowindow = new google.maps.InfoWindow({content: "<b>Ro{tiq Bata</b><br/>Pantalejska 24<br/> Jagodin mala"});
+        google.maps.event.addListener(marker, "click", function () {
+            infowindow.open(map, marker);
+        });
+        infowindow.open(map, marker);
+    }
+    google.maps.event.addDomListener(window, 'load', init_map);
+</script>
+
+
+
+
+<script>                        <!--Skripta za scroll to top-->
+var timeOut;
+function scrollToTop() {
+    if (document.body.scrollTop!=0 || document.documentElement.scrollTop!=0){
+        window.scrollBy(0,-50);
+        timeOut=setTimeout('scrollToTop()',10);
+    }
+    else clearTimeout(timeOut);
+}
+</script>
+
+
+
+
+<script>                <!--Skripta za Hamburger button-->
+/* When the user clicks on the button,
+ toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+
+        var dropdowns = document.getElementsByClassName("navigation_top");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+</script>
+
+
+
+</body>
+</html>
